@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leyu · 日常检索与对照笔记</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 2.4rem 1.2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+        }
+
+        /* hero 横幅 */
+        .hero {
+            margin-top: 2rem;
+            margin-bottom: 3.8rem;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 2.2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 460;
+            letter-spacing: -0.02em;
+            color: #111;
+            line-height: 1.2;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero .subhead {
+            font-size: 1rem;
+            color: #6b6b6b;
+            font-weight: 380;
+            border-left: 3px solid #d4d4d4;
+            padding-left: 1rem;
+            margin-top: 0.3rem;
+        }
+
+        .hero .ornament {
+            display: block;
+            margin-top: 1.2rem;
+            font-size: 0.8rem;
+            color: #b0b0b0;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* 背景说明卡片 */
+        .context-card {
+            background: #f8f8f8;
+            border-radius: 0;
+            padding: 1.6rem 2rem;
+            margin-bottom: 3rem;
+            border-left: 4px solid #d0d0d0;
+        }
+
+        .context-card h2 {
+            font-size: 1.1rem;
+            font-weight: 520;
+            letter-spacing: 0.01em;
+            color: #222;
+            margin-bottom: 0.75rem;
+        }
+
+        .context-card p {
+            font-size: 0.95rem;
+            color: #3a3a3a;
+        }
+
+        .context-card p + p {
+            margin-top: 0.8rem;
+        }
+
+        /* 正文区域，三段自然介绍 */
+        .feature-section {
+            margin-bottom: 2.2rem;
+        }
+
+        .feature-item {
+            margin-bottom: 2.4rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.25rem;
+            font-weight: 450;
+            letter-spacing: -0.01em;
+            color: #1a1a1a;
+            margin-bottom: 0.35rem;
+            border-bottom: 1px solid #ececec;
+            padding-bottom: 0.25rem;
+            display: inline-block;
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #2a2a2a;
+            margin-top: 0.5rem;
+        }
+
+        .feature-item .meta-note {
+            font-size: 0.85rem;
+            color: #7a7a7a;
+            margin-top: 0.3rem;
+            font-style: normal;
+        }
+
+        /* 小而克制的引用或摘要 */
+        .inset-quote {
+            background: #f4f4f4;
+            padding: 0.9rem 1.3rem;
+            margin: 1.8rem 0 2.6rem 0;
+            font-size: 0.9rem;
+            color: #3c3c3c;
+            border-left: 2px solid #c0c0c0;
+        }
+
+        .inset-quote span {
+            display: block;
+            margin-top: 0.4rem;
+            color: #8a8a8a;
+            font-size: 0.8rem;
+        }
+
+        /* 页尾访问提示 */
+        .site-footer {
+            margin-top: 3.8rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #eaeaea;
+            font-size: 0.9rem;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .site-footer a {
+            color: #1e1e1e;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b8b8b8;
+            transition: text-decoration-color 0.2s;
+        }
+
+        .site-footer a:hover {
+            text-decoration-color: #1e1e1e;
+        }
+
+        .site-footer .hint {
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            color: #7c7c7c;
+        }
+
+        .site-footer .small-note {
+            display: inline-block;
+            margin-top: 0.6rem;
+            font-size: 0.75rem;
+            color: #9a9a9a;
+        }
+
+        /* 响应式细节 */
+        @media (max-width: 500px) {
+            body {
+                padding: 1.6rem 0.8rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .context-card {
+                padding: 1.2rem 1.2rem;
+            }
+
+            .feature-item h3 {
+                font-size: 1.1rem;
+            }
+
+            .site-footer {
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 横幅 hero -->
+        <header class="hero">
+            <h1>leyu · 检索与对照</h1>
+            <div class="subhead">日常查询、原文对照、延伸阅读的轻量笔记</div>
+            <span class="ornament">—— 索引即目录，对照即理解</span>
+        </header>
+
+        <!-- 背景说明 -->
+        <div class="context-card">
+            <h2>为什么会有这样的页面</h2>
+            <p>阅读时遇到新名词、模糊概念或前后矛盾的表述，往往需要停下来查询。这本是为了一时解惑，但查完即忘，下次遇到同样词条又要重新开始。<strong>leyu</strong> 想提供一种更安静的解决方案：不打断阅读节奏，只做对照和延伸。</p>
+            <p>这里没有复杂的后台逻辑，只有经过归纳的条目、原文片段和简短注释。适合那些希望保留上下文、又不想永远停留在搜索页的人。</p>
+        </div>
+
+        <!-- 三段自然介绍 -->
+        <div class="feature-section">
+            <div class="feature-item">
+                <h3>从查询到对照</h3>
+                <p>大多数查询工具只给一个孤立的解释，但真实的问题往往出现在句子与句子的缝隙里。比如一段论述中的两个相似术语，单独看都说得通，放在一起却容易混淆。<strong>leyu</strong> 偏向于把相关条目并排放置，标注来源和细微差异。这种对照不一定每次都得出新结论，但至少能让人更清楚地看到自己在哪里产生了困惑。</p>
+                <div class="meta-note">适用场景：术语辨析、译文校对、概念溯源</div>
+            </div>
+
+            <div class="feature-item">
+                <h3>延伸阅读的边界</h3>
+                <p>一篇好的延伸阅读应该像脚注，既不偏离主线，又能提供必要的外围信息。很多时候我们并不想立刻深入某个分支领域，只是需要确认一下“这件事是否还有另一种说法”。<strong>leyu</strong> 在整理时有意控制信息密度，每一条延伸内容都尽量保持与核心主题的直接关联，避免无限跳转带来的认知负担。</p>
+                <div class="meta-note">适用场景：研究笔记、主题阅读、资料汇编</div>
+            </div>
+
+            <div class="feature-item">
+                <h3>日常使用的节奏</h3>
+                <p>这个页面不是一次性的知识库，更像是一份持续更新的阅读日志。每一次对照都可能产生新的注释，每一段延伸都可能引向另一个条目。重要的是保持记录的轻量和可回溯性。不需要花哨的仪表盘，只需要一个始终可用的地址——就像放在书桌上的索引卡片，随时可以取下来，也随时可以放回去。</p>
+                <div class="meta-note">适用场景：个人知识管理、日常记录、主题整理</div>
+            </div>
+        </div>
+
+        <!-- 小摘要 / FAQ 风格片段 -->
+        <div class="inset-quote">
+            “或许最好的检索不是找到唯一的答案，而是看见不同答案之间的空隙。”
+            <span>—— 摘自页面笔记，2025 · 春</span>
+        </div>
+
+        <!-- 页尾访问提示，自然包含链接 -->
+        <footer class="site-footer">
+            <p>如果你恰好也在尝试以对照的方式整理阅读碎片，不妨从 <a href="https://index-cns-leyu.com">leyu</a> 开始。这里没有推送，没有排行榜，只有一组逐渐生长的索引条目和原文片段。适合当作书签放在浏览器的一角，需要时打开，不需要时放着。</p>
+            <p class="hint">每次访问看到的可能略有不同——页面内容会随着阅读和记录慢慢更新，保持一种低频率的改进。</p>
+            <span class="small-note">leyu · 日常检索与对照笔记</span>
+        </footer>
+    </div>
+</body>
+</html>
