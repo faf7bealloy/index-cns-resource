@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 资料索引与信息整理</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #fcfcfc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: #222;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+    }
+    /* hero */
+    .hero {
+      margin-top: 1.8rem;
+      margin-bottom: 3.2rem;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #111;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: #3a3a3a;
+      max-width: 600px;
+    }
+    /* 分割线 */
+    .separator {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 2.5rem 0;
+    }
+    /* 通用 section */
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.1rem;
+      color: #111;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: #222;
+    }
+    .desc {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 1.2rem;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem 2rem;
+    }
+    .feature-item {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+      border: 1px solid #efefef;
+      transition: box-shadow 0.2s;
+    }
+    .feature-item:hover {
+      box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+    }
+    .feature-item p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+    }
+    /* 说明区卡片 */
+    .info-card {
+      background: #f7f9fa;
+      border-left: 3px solid #1d7a8c;
+      padding: 1.4rem 1.6rem;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 1.6rem;
+    }
+    .info-card p {
+      font-size: 0.95rem;
+      color: #2e2e2e;
+    }
+    .info-card .label {
+      font-weight: 600;
+      color: #1d5a6e;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+    }
+    /* FAQ 摘要 */
+    .faq-item {
+      border-bottom: 1px solid #eaeaea;
+      padding: 1rem 0;
+    }
+    .faq-item:first-child {
+      padding-top: 0;
+    }
+    .faq-q {
+      font-weight: 500;
+      color: #111;
+      margin-bottom: 0.3rem;
+    }
+    .faq-a {
+      font-size: 0.9rem;
+      color: #4a4a4a;
+    }
+    .faq-more {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #2a6f80;
+    }
+    /* 页脚 */
+    .footer-links {
+      border-top: 1px solid #eaeaea;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
+    }
+    .footer-links a {
+      color: #1d5a6e;
+      text-decoration: none;
+      border-bottom: 1px dotted transparent;
+    }
+    .footer-links a:hover {
+      border-bottom-color: #1d5a6e;
+    }
+    .footer-note {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+    /* 响应式 */
+    @media (max-width: 640px) {
+      body { padding: 1.2rem 0.8rem; }
+      .hero h1 { font-size: 1.9rem; }
+      .grid-2 { grid-template-columns: 1fr; gap: 1rem; }
+      .grid-2 .feature-item { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- hero 区 -->
+  <div class="hero">
+    <h1>爱游戏 · 信息索引与内容整理</h1>
+    <p>围绕游戏领域的一手资料归档、结构梳理与要点归纳，为从业者与爱好者提供可参考的信息节点。基于 <a href="https://asia-cns-ayx.com" style="color:#1d5a6e; text-decoration:underline; text-underline-offset:2px;">爱游戏</a> 平台资源，持续更新数据、报道与行业观察。</p>
+  </div>
+
+  <hr class="separator" />
+
+  <!-- 优势区：两列 -->
+  <section>
+    <h2>资料整理维度的优势</h2>
+    <div class="grid-2">
+      <div class="feature-item">
+        <h3>分层索引</h3>
+        <p>按品类、版本、事件时间线建立分类目录，降低重复查找成本。每一层附有简短摘要与源链接。</p>
+      </div>
+      <div class="feature-item">
+        <h3>版本注释</h3>
+        <p>对主要更新、版本号变更、机制调整进行记录与对比，便于回溯改动逻辑。</p>
+      </div>
+      <div class="feature-item">
+        <h3>主题聚合</h3>
+        <p>将散见于各处的玩家讨论、开发日志、媒体评测按主题归拢，形成可交叉阅读的资料包。</p>
+      </div>
+      <div class="feature-item">
+        <h3>来源标注</h3>
+        <p>每条信息均标注原始出处或参考索引，不混入未经核实的二手叙述，保持可验证性。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 说明区（信息密度稍高） -->
+  <section>
+    <h2>信息索引的切入点</h2>
+    <div class="info-card">
+      <span class="label">▸ 内容类型</span>
+      <p>包括版本更新日志、机制数值、活动记录、角色/物品数据库、社区梳理帖、开发者访谈摘要。每个条目附带时间戳、来源与简要上下文，避免孤立信息。</p>
+    </div>
+    <div class="info-card">
+      <span class="label">▸ 整理逻辑</span>
+      <p>以“实体 → 事件 → 关系”为框架。实体如角色、装备、系统；事件如补丁、赛季、限时活动；关系如克制链、搭配推荐、任务线依赖。以结构化方式呈现，而非单一长文。</p>
+    </div>
+    <div style="margin-top:0.6rem; font-size:0.9rem; color:#555;">
+      索引内容本身也作为独立资源归档 — 可在此基础上进行二次筛选、对比或分析，而非仅作为导航页。
+    </div>
+  </section>
+
+  <!-- FAQ 摘要 -->
+  <section>
+    <h2>常见疑问摘要</h2>
+    <div class="faq-item">
+      <div class="faq-q">资料更新频率如何？</div>
+      <div class="faq-a">核心索引按月整理，重要版本或事件发生后 48 小时内补充条目。所有更新均标记时间与变动范围。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">索引是否涵盖所有内容？</div>
+      <div class="faq-a">以主流公开信息与可追溯资料为主，部分深度数值或非公开数据不列入。每个主题页会说明覆盖范围与局限。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">如何反馈遗漏或错误？</div>
+      <div class="faq-a">可通过平台内反馈通道提交，也可直接联系整理者。修正后会在索引页备注变更记录。</div>
+    </div>
+    <div class="faq-more">更多条目与详细索引结构请参考 <a href="https://asia-cns-ayx.com" style="color:#1d5a6e; text-decoration:underline; text-underline-offset:2px;">爱游戏</a> 资料库。</div>
+  </section>
+
+  <!-- 底部链接区 -->
+  <div class="footer-links">
+    <span>索引依据：<a href="https://asia-cns-ayx.com">爱游戏</a></span>
+    <span>归档方式：分类 / 时间线</span>
+    <span>最近更新：2025-04</span>
+  </div>
+  <div class="footer-note">
+    本页面仅作为信息整理索引示例，不构成对任何游戏产品的直接运营或推广声明。
+  </div>
+</div>
+</body>
+</html>
